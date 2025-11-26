@@ -9,7 +9,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
-package-lock.json
 
 # Environment files (will be handled separately)
 .env.local
