@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Imperial+Script&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.footer {
+  width: 100%;
+  background-color: #000; /* Fondo oscuro para el footer */
+  position: relative;
+  bottom: 0;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas de igual tamaño */
+  gap: 20px; /* Espaciado entre las columnas */
+  color: white; /* Texto blanco */
+  padding: 40px 20px;
+  text-align: left;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Estilos para cada columna del footer */
+.footer-column {
+  display: flex;
+  flex-direction: column; /* Los enlaces se organizan verticalmente */
+}
+
+.footer-column img {
+  height: 90px;
+}
+
+/* Estilo de los enlaces dentro de cada columna */
+.footer-column a {
+  color: white; /* Enlaces en color blanco */
+  text-decoration: none; /* Quitar el subrayado de los enlaces */
+  margin: 8px 0; /* Espaciado entre los enlaces */
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.footer-phone {
+  font-size: 22px !important;
+}
+
+/* Cambiar el color de los enlaces al pasar el mouse */
+.footer-column a:hover {
+  color: var(--primary-color); /* Color azul al pasar el mouse */
+}
+.wrapper {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.icon a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #fff;
+  border-radius: 100px;
+  padding: 8px;
+}
+
+.footer-links {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr; /* En dispositivos móviles, poner todo en una sola columna */
+    text-align: center; /* Centrar los textos en móviles */
+  }
+}

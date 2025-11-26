@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Imperial+Script&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.social-post-container {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  max-width: 1400px;
+  z-index: 10;
+  margin: 0 auto;
+  position: relative;
+  padding: 1.5rem 1.2rem;
+
+  display: flex;
+  gap: 40px;
+}
+
+.social-post-container h1,
+.social-post-container h2,
+.social-post-container h3,
+.social-post-container h4,
+.social-post-container h5,
+.social-post-container h6 {
+    font-weight: 500;
+}
+
+.social-post-container span {
+  font-size: inherit !important;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  line-height: inherit;
+}
+
+.quill-content ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+}
+
+.quill-content ol {
+  list-style-type: decimal;
+  margin-left: 1.5rem;
+}
+
+.quill-content li {
+  margin-bottom: 0.25rem;
+}
+
+.social-post-container .left-content {
+    width: 65%;
+    flex-shrink: 0;
+    text-align: justify;
+}
+
+.social-post-container .right-media {
+    width: 35%;
+
+}
+.social-post-container .right-media img,
+.social-post-container .right-media iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+    border-radius: 5px;
+}
+.social-post-container .right-media .r-m-img-container{
+    margin-top: 30px;
+}
+
+
+@media (max-width: 768px) {
+  .social-post-container {
+    flex-direction: column;
+  }
+
+  .social-post-container .left-content,
+  .social-post-container .right-media {
+    width: 100%;
+  }
+
+  .social-post-container h1 { font-size: 1.75rem; }
+  .social-post-container h2 { font-size: 1.5rem; }
+  .social-post-container h3 { font-size: 1.25rem; }
+}

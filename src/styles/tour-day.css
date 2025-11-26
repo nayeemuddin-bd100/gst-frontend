@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Imperial+Script&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.day-main-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+.itinerary-title {
+  color: #333;
+  font-family: Merriweather, Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+}
+
+.dbd {
+  color: var(--primary-color);
+  font-size: 1rem;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  border-bottom: 6px dotted #666;
+  padding-bottom: 1rem;
+  width: fit-content;
+}
+
+.dbd span {
+  font-family: "Imperial Script", Cambria, Cochin, Georgia, Times,
+    "Times New Roman", serif;
+  font-size: 2rem;
+  margin: 0 8px;
+}
+.day-container {
+  margin: 20px 0;
+  border: 1px solid #ddd;
+  overflow: hidden;
+}
+
+.toggle-day-button {
+  width: 100%;
+  padding: 20px;
+  background-color: #ddd;
+  color: #333;
+  border: none;
+  cursor: pointer;
+  border-radius: 0;
+  transition: background-color 0.4s ease;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+}
+.toggle-day-button div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 24px;
+}
+
+.toggle-day-button:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.day-content {
+  padding: 2rem;
+  background-color: #eee;
+}
+
+.activity-item {
+  margin-bottom: 20px;
+}
+
+.activity-item h3 {
+  margin-bottom: 2rem;
+  color: #333;
+  font-family: Merriweather, Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.activity-item p {
+  line-height: 1.5;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+.image-gallery {
+  width: 85%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0px;
+  margin: 0px auto;
+}
+
+.image-gallery iframe {
+  aspect-ratio: 16 / 9;
+  width: 100%;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.image-gallery iframe:hover {
+  transform: scale(1.1);
+}
+
+.td-activity-container {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 20px;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .image-gallery {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .td-activity-container {
+    grid-template-columns: 1fr;
+  }
+}

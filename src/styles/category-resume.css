@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.cr-countries-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  max-width: 1400px;
+  margin: 1rem auto;
+  box-sizing: border-box;
+}
+
+.cr-category-item {
+  width: 100%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.cr-category-item img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.cr-category-item h3 {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  border-bottom: 6px dotted var(--primary-color);
+  width: fit-content;
+  padding-bottom: 1rem;
+  margin: 0 auto;
+}
+
+.cr-category-item a {
+  background: var(--primary-color);
+  padding: 1rem 2rem;
+  width: fit-content;
+  margin: 0 auto;
+  color: #fff;
+  text-decoration: none;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+.cr-category-item a:hover {
+  background: #970800;
+}
+
+.wow {
+  max-width: 1400px;
+  margin: 3rem auto;
+  font-size: 2rem;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  color: var(--primary-color);
+  /* border-bottom: 6px dotted #999; */
+  padding-bottom: 1rem;
+}
+
+.et-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 1rem;
+  max-width: 1400px;
+  margin: 2rem auto;
+}
+
+.et-items-container {
+  aspect-ratio: 1;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.et-background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  filter: brightness(0.6);
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.et-items-container h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  font-weight: 600;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+.et-items-container a {
+  background-color: #fff;
+  padding: 1rem 1.5rem;
+  color: var(--primary-color);
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-weight: 500;
+}
+.et-tour-types {
+  max-width: 1400px;
+  margin: 0 auto 3rem auto;
+  padding: 0 1rem;
+}
+
+.et-tour-types h2 {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  border-bottom: 6px dotted #999;
+  padding: 1rem 2rem 1rem 0;
+  width: fit-content;
+}
+
+@media (max-width: 768px) {
+  .cr-countries-container {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,199 @@
+.csp-container {
+  /* max-width: 90%; */
+  background: #fff;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+.csp-title {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #222;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+.csp-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.csp-label {
+  font-weight: 600;
+  color: #444;
+  margin-top: 16px;
+}
+.csp-input,
+.csp-textarea {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.3s ease;
+  resize: vertical;
+  font-family: inherit;
+}
+.csp-input:focus,
+.csp-textarea:focus {
+  border-color: var(--primary-color);
+  outline: none;
+}
+.csp-submit-btn {
+  margin-top: 20px;
+  background-color: var(--primary-color);
+  color: white;
+  font-weight: 700;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+.csp-submit-btn:hover {
+  background-color: #252525;
+}
+
+/* Text editor */
+
+.text-editor {
+  width: 100%;
+  max-width: 100%;
+  margin-top: 1rem;
+}
+
+.text-editor .ql-container {
+  min-height: 700px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.text-editor .ql-editor {
+  min-height: 150px;
+}
+
+.text-editor .ql-toolbar {
+  border-radius: 6px 6px 0 0;
+}
+
+.text-editor .ql-container {
+  border-radius: 0 0 6px 6px;
+}
+
+.text-editor .ql-picker-label,
+.ql-picker-item {
+  font-size: 14px; /* or whatever fits your UI */
+}
+
+.ql-editor span {
+  font-size: inherit !important;
+     font-family: Montserrat, Arial, Helvetica, sans-serif;
+
+  font-weight: normal;
+  line-height: inherit;
+}
+
+.text-editor {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* List posts styles */
+
+.post-row {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  background-color: #fff;
+  gap: 16px;
+}
+
+.post-row__image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.post-row__content {
+  flex-grow: 1;
+}
+
+.post-row__title {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 4px 0;
+  color: #333;
+  cursor: pointer;
+}
+
+.post-row__date {
+  font-size: 14px;
+  color: #888;
+}
+
+.post-row__actions {
+  display: flex;
+  gap: 8px;
+}
+
+.post-row__icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+
+.post-row__icon-btn.edit:hover {
+  background-color: rgba(25, 118, 210, 0.1);
+  color: #1976d2;
+}
+
+.post-row__icon-btn.delete:hover {
+  background-color: rgba(211, 47, 47, 0.1);
+  color: #d32f2f;
+}
+
+/* Modal style */
+
+.modal-actions {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 12px;
+}
+
+.modal-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.modal-btn.cancel {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.modal-btn.confirm {
+  background-color: #d32f2f;
+  color: white;
+}
+
+.no-p-found {
+  text-align: center;
+  margin-top: 50px;
+  font-weight: 400;
+  font-style: italic;
+}

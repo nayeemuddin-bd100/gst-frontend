@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.de-main-container {
+  flex-direction: column;
+  display: flex;
+  padding: 2rem 0;
+}
+
+.de-tour-data-container h1 {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.de-tour-data-container h1 span {
+  font-size: 2rem;
+  color: #338;
+}
+
+.de-month {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 1.3rem;
+  font-family: merriweather, Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+}
+.de-tour-data-container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.de-deal-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #f4f4f4;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  border-bottom: 4px solid var(--primary-color);
+}
+
+.de-dates {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.de-dates div p {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  line-height: 2;
+}
+
+.de-price-button {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.de-price-button {
+  font-family: Merriweather, Arial, Helvetica, sans-serif;
+}
+
+.de-price-button div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.de-price-button div span {
+  font-size: 2.5rem;
+  color: #037;
+  text-decoration: underline;
+}
+
+.de-price-button button {
+  background-color: var(--primary-color);
+  width: fit-content;
+  margin: 1rem auto;
+  padding: 0.5rem 2rem;
+  border: none;
+  color: #fff;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  transition: background-color 0.3s;
+}

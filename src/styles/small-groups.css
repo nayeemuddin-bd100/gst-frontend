@@ -1,0 +1,24 @@
+.sg-container {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 1rem;
+    background: #fff;
+    align-items: center;
+}
+
+.sg-container p {
+    line-height: 1.8;
+    padding: 1rem;
+}
+
+.sg-container img {
+    aspect-ratio:  1;
+    object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+    .sg-container {
+      grid-template-columns: 1fr; /* En dispositivos móviles, poner los contenedores en una sola columna */
+    }
+  }

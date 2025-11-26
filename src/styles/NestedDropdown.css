@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Imperial+Script&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Contenedor del dropdown principal */
+.nd-dropdown-container {
+  width: 250px;
+}
+
+/* Botón principal del dropdown */
+.nd-dropdown-button {
+  border: none;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  color: var(--primary-color);
+  font-family: Montserrat Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+/* Menú principal */
+.nd-dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-in-out;
+  gap: 1rem;
+}
+
+.nd-dropdown-menu.open {
+  max-height: inherit;
+  margin: 1rem;
+  border-left: 1px solid #333;
+  padding: 1rem;
+}
+
+/* Elementos del dropdown */
+.nd-dropdown-item {
+  width: 100%;
+}
+
+/* Botón de los dropdowns anidados */
+.nd-dropdown-submenu-button {
+  background: none;
+  border: none;
+
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+}
+
+/* Menú anidado */
+.nd-dropdown-submenu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+}
+
+.nd-dropdown-submenu.open {
+  max-height: 300px;
+}
+
+/* Links dentro del dropdown */
+.nd-dropdown-link {
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  padding: 0.8rem;
+  font-family: Montserrat;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+.nd-dropdown-link:hover {
+}

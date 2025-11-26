@@ -1,0 +1,76 @@
+/* Estilos generales para la sección Hero */
+@import url("https://fonts.googleapis.com/css2?family=Imperial+Script&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.lp-hero {
+  height: 75vh; /* Altura de la sección hero: 75% de la altura de la ventana */
+  overflow: hidden; /* Ocultar lo que se desborda fuera de la sección */
+}
+
+.lp-hero-image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease-in-out; /* Suavizar el cambio de imagen */
+}
+
+.lp-hero-circle {
+  height: 70%;
+  aspect-ratio: 1 / 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  border: 10px dotted #fff;
+}
+
+.lp-hero-arrow {
+  transform: rotate(180deg);
+  fill: var(--primary-color);
+}
+
+.lp-hero-circle div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lp-hero-circle input {
+  width: 70%;
+}
+
+.lp-hero-circle h4 {
+  font-size: 3rem;
+  color: #fff;
+  align-self: center;
+  text-align: center;
+  margin-bottom: 16px;
+  font-family: Merriweather, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  text-shadow: 0px 0px 3px #000;
+}
+
+.lp-hero-circle hr {
+  width: 20%;
+  border: 2px solid var(--primary-color);
+}
+
+/*  */
+
+/* Media Queries para hacer la sección hero responsive en móviles */
+@media (max-width: 768px) {
+  .lp-hero-circle {
+    height: auto;
+    width: 80%;
+    border: none;
+  }
+}

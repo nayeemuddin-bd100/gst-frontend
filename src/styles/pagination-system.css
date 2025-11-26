@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+/* Estilos generales para la sección Hero */
+
+.psy-container {
+  background-color: #eee;
+}
+.hero-container {
+  position: relative;
+  height: 60vh; /* Altura de la sección hero: 75% de la altura de la ventana */
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.hero {
+  position: absolute;
+  overflow: hidden; /* Ocultar lo que se desborda fuera de la sección */
+  filter: brightness(0.6);
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.hero-text {
+  max-width: 1400px;
+  margin: 3rem auto 0 auto;
+  border-bottom: 1px solid #bbb;
+}
+
+.hero-text div {
+  padding: 20px;
+  border-top: 1px solid #bbb;
+  border-left: 1px solid #bbb;
+  border-right: 1px solid #bbb;
+  background: #fff;
+  width: fit-content;
+}
+
+.hero-text img {
+  padding: 0.5rem 2rem;
+  filter: invert(100%);
+  background: #46e3dd;
+  height: 3rem;
+  display: flex;
+}
+
+/* Contenedor principal */
+.section-container {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.dropdowns-container {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 32px;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+}
+
+.dropdown {
+  width: fit-content;
+  border-radius: 0;
+  padding: 10px;
+}
+
+/* Grid de tarjetas */
+.card-grid {
+  padding-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 22px;
+  font-weight: bold;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  color: inherit;
+  width: 100%;
+  border-bottom: 6px dotted #666;
+  padding-bottom: 16px;
+}
+
+.card-description {
+  margin: 8px 0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #444;
+  font-family: Montserrat, "Trebuchet MS", "Lucida Sans Unicode",
+    "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border-bottom: 2px solid #444;
+  padding: 16px 0;
+}
+
+.price p:nth-child(1) {
+  color: #444;
+  font-size: 18px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.price p:nth-child(2) {
+  color: var(--primary-color);
+  font-size: 24px;
+  font-weight: 600;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+.card-link {
+  color: #fff;
+  padding: 16px;
+  background: var(--primary-color);
+  text-decoration: none;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+/* Paginación */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.pagination-numbers {
+  display: flex;
+  gap: 8px;
+}
+
+.ps-select-label {
+  align-content: center;
+  font-family: Montserrat, sans-serif;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  position: relative;
+  width: 80%;
+  max-width: 600px;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+  .modal-content {
+    width: 100%;
+    max-width: none;
+  }
+}

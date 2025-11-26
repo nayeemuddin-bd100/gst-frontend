@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Imperial+Script&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Contenedor principal de las columnas */
+.mt-columns-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1400px; /* Ancho máximo de 1400px */
+  margin: 3rem auto; /* Centrar la sección */
+}
+
+/* Estilos para cada columna */
+.mt-column {
+  flex: 1; /* Cada columna ocupará un espacio igual */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+/* Contenedor de los elementos dentro de cada columna */
+.mt-content-container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between; /* Espacio entre los elementos */
+  width: 100%;
+  background: #eeeeee;
+}
+
+.mt-text-container {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+/* Estilo de la imagen */
+.mt-image {
+  width: 100%;
+  /*max-width: 300px; /* Ancho máximo de la imagen */
+  margin-bottom: 20px;
+}
+
+/* Estilo del título */
+.mt-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  line-height: 1.5;
+  color: #333;
+  font-family: Merriweather, Arial, Helvetica, sans-serif;
+}
+
+/* Estilo del texto */
+.mt-text {
+  font-size: 16px;
+  color: #666;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* Estilos para los botones */
+.mt-buttons {
+  display: flex;
+  gap: 10px; /* Espacio entre los botones */
+}
+
+.mt-button {
+  background: var(--primary-color);
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  box-sizing: border-box;
+  text-align: center;
+}
+.mt-second-button {
+  background: #333;
+}
+
+.mt-button:hover {
+  background-color: #666;
+}
+
+/* Media Query para dispositivos móviles */
+@media (max-width: 768px) {
+  .mt-columns-container {
+    flex-direction: column;
+    padding: 10px;
+    max-width: 427px;
+    box-sizing: border-box;
+  }
+
+  .mt-column {
+    height: auto; /* Dejar que la altura se ajuste automáticamente en móviles */
+    margin-bottom: 20px;
+  }
+
+  .mt-content-container {
+    align-items: flex-start; /* Alinear los elementos hacia la izquierda en móviles */
+  }
+
+  .mt-image {
+    width: 100%;
+  }
+
+  .mt-title {
+    font-size: 20px; /* Reducir el tamaño del título en móviles */
+  }
+
+  .mt-text {
+    font-size: 14px; /* Reducir el tamaño del texto en móviles */
+  }
+
+  .mt-buttons {
+    flex-direction: column; /* Los botones estarán en una columna */
+    align-items: center;
+  }
+
+  .mt-button {
+    width: 100%; /* Los botones ocuparán el 100% del ancho */
+    margin-bottom: 10px;
+  }
+}

@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Imperial+Script&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.tt-title-text {
+  background: #fff;
+  max-width: 1400px;
+  padding: 0.7rem 1rem;
+  box-sizing: border-box;
+  border-bottom: 1px solid #999;
+  margin: 0 auto 1rem auto;
+}
+
+.tt-title-text h4 {
+  font-size: 1.3rem;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  color: var(--primary-color);
+  margin-bottom: 0.7rem;
+}
+
+.tt-title-text p {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  color: #333;
+  line-height: 1.8;
+  font-size: 0.9rem;
+}

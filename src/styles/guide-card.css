@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Imperial+Script&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.guide-container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  align-items: center;
+  max-width: 1400px;
+  margin: 30px auto;
+  background-color: #ffffff;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.guide-left-section {
+  padding: 15px;
+  box-sizing: border-box;
+}
+.guide-left-section p {
+  font-size: 1rem;
+  color: var(--primary-color);
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+.guide-left-section h4 {
+  font-size: 2.5rem;
+  color: #333;
+  font-family: Merriweather, Arial, Helvetica, sans-serif;
+  margin: 10px 0 30px 0;
+  padding-bottom: 0.6rem;
+  border-bottom: 6px dotted #666;
+  width: fit-content;
+}
+
+.guide-right-section {
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.guide-right-section h4 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  font-family: Merriweather, Arial, Helvetica, sans-serif;
+  margin: 0 0 30px;
+  padding-bottom: 0.6rem;
+}
+.guide-right-section p {
+  font-size: 1rem;
+  color: #333;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+.guide-responsive-image {
+  width: 85%;
+  height: auto;
+  border-radius: 100%;
+  margin: 0 auto;
+}
+
+.guide-text-area {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .guide-container {
+    grid-template-columns: 1fr;
+  }
+
+  .guide-left-section,
+  .guide-right-section {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+}

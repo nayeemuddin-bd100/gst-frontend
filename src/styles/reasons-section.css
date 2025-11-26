@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Imperial+Script&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.r-reasons-container {
+  max-width: 1400px;
+  margin: 0 auto 4rem auto;
+}
+
+.r-reasons-container h2 {
+  font-size: 2rem;
+  padding-bottom: 16px;
+  border-bottom: 8px dotted #9b9b9b;
+  width: fit-content;
+  margin: 32px 10px;
+  color: var(--primary-color);
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+/* Contenedor principal de la sección */
+.r-section-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas en pantallas grandes */
+  gap: 28px; /* Espaciado entre los contenedores */
+  max-width: 1400px; /* Ancho máximo para la sección */
+  margin: 0 auto; /* Centrar la sección en la página */
+  padding: 10px;
+}
+
+/* Estilo para cada contenedor */
+.r-section-item {
+  background-color: #eeeeee; /* Fondo gris claro para cada contenedor */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  display: flex;
+  flex-direction: column; /* Colocar los elementos verticalmente */
+  height: 100%; /* Asegurarse de que el contenedor ocupe toda la altura disponible */
+  text-align: center;
+}
+
+.r-section-item img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.r-section-item div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+  gap: 2rem;
+  padding: 0px 16px 28px 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.r-section-item h3 {
+  margin: 10px 0 0 0;
+  font-size: 1.25rem;
+  font-family: Merriweather, Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  padding: 0px 8px 10px 8px;
+  border-bottom: 2px solid var(--primary-color);
+}
+.r-section-item p {
+  line-height: 2;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+.r-section-item a {
+  padding: 10px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  width: 60%;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+.r-hero-arrow {
+  fill: var(--primary-color);
+  margin: 0 auto;
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.r-section-item a:hover {
+  background-color: #666;
+}
+
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  .r-section-container {
+    grid-template-columns: 1fr; /* En dispositivos móviles, poner los contenedores en una sola columna */
+  }
+}

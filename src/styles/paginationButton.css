@@ -1,0 +1,31 @@
+.button {
+  padding: 16px 24px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.button-solid {
+  background-color: #aaa;
+  color: white;
+}
+
+.button-solid:hover {
+  background-color: var(--primary-color);
+}
+
+.button-ghost {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+.button-ghost:hover {
+  text-decoration: underline;
+}
+
+.button-disabled {
+  background-color: #ccc;
+  color: white;
+  cursor: not-allowed;
+}

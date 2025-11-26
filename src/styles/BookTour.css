@@ -1,0 +1,589 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --color-red: #00a878;
+  --color-green: var(--primary-color);
+  --color-button: #fdffff;
+  --color-black: #000;
+}
+
+.bt-background,
+.bt-success-background {
+  background: #0008;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+}
+.bt-close-btn {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  background: none;
+  border: none;
+  font-size: 4rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+.bt-container {
+  background: #fff;
+  padding: 1rem;
+  width: 70%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.bt-sections-container {
+  /* display: grid;
+  grid-template-columns: 25% 75%; */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.bt-total-cost-title {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  border-bottom: 5px dotted var(--primary-color);
+  width: fit-content;
+  padding: 0.5rem 3rem;
+  font-size: 1.3rem;
+  margin: 0 auto;
+  letter-spacing: 2px;
+}
+
+.bt-total-cost-passengers {
+  font-family: Merriweather, Arial, Helvetica, sans-serif;
+}
+
+.bt-total-cost-passengers span {
+  font-size: 2rem;
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.bt-tour-name {
+  text-align: center;
+  font-family: Merriweather, Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 10px dotted var(--primary-color);
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0 2rem 0.5rem;
+}
+
+.bt-right form {
+  display: flex;
+  flex-direction: column;
+}
+
+.bt-leader-question {
+  font-family: Monstserrat, Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+}
+
+.bt-switch-container {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0.5rem 0 1rem;
+  align-items: center;
+}
+
+.bt-switch-container p {
+  font-size: 1.5rem;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+.bt-user-data-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem 2rem;
+}
+
+.bt-user-data-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.bt-user-data-item label {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+.bt-user-data-item input,
+.bt-user-data-item select {
+  padding: 0.5rem;
+  font-size: 16px;
+}
+
+.bt-form-submit-btn {
+  background-color: var(--primary-color);
+  width: fit-content;
+  margin: 1rem auto;
+  padding: 0.5rem 3rem;
+  border: none;
+  color: #fff;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 1.1rem;
+  transition: background-color 0.3s;
+}
+
+.bt-form-submit-btn:hover {
+  background-color: #980a00;
+}
+
+.switch-button {
+  display: inline-block;
+}
+.switch-button .switch-button__checkbox {
+  display: none;
+}
+
+.bt-warning {
+  margin: 10px auto;
+  width: 50%;
+  text-align: center;
+  color: #bb002a;
+  font-family: Merriweather, Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+}
+.switch-button .switch-button__label {
+  background-color: var(--color-red);
+  width: 4rem;
+  height: 2rem;
+  border-radius: 3rem;
+  display: inline-block;
+  position: relative;
+}
+.switch-button .switch-button__label:before {
+  transition: 0.2s;
+  display: block;
+  position: absolute;
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--color-button);
+  content: "";
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 0px 1px var(--color-black);
+}
+.switch-button .switch-button__checkbox:checked + .switch-button__label {
+  background-color: var(--color-green);
+}
+.switch-button .switch-button__checkbox:checked + .switch-button__label:before {
+  transform: translateX(2rem);
+}
+.bt-back-btn {
+  width: fit-content;
+  padding: 5px 1rem;
+  color: #fff;
+  background-color: var(--primary-color);
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.bt-back-btn:hover {
+  background-color: #980a00;
+}
+.bt-resume-container {
+  flex-direction: column;
+}
+
+.bt-section-container {
+  margin: 1rem 0;
+}
+
+.bt-section-deploy {
+  background: #888;
+  padding: 1rem;
+  margin: 2px 0;
+}
+
+.bt-section-deploy h6 span {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.bt-section-deploy h6 {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bt-flights-section-container,
+.bt-sights-container,
+.bt-hotels-container,
+.bt-transport-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.bt-flight-container,
+.bt-sights-data {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.bt-guides-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.bt-flight-position {
+  color: var(--primary-color);
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.bt-flight-route {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 2px solid var(--primary-color);
+  align-items: center;
+}
+
+.bt-airline-data-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.bt-airline-data-container img {
+  width: 100px;
+  object-fit: contain;
+}
+.bt-airline-data,
+.bt-sights-data,
+.bt-guides-data,
+.bt-hotels-data,
+.bt-transport-data {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  flex: 1;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.bt-guides-data,
+.bt-hotels-data,
+.bt-transport-data {
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.bt-airline-data div,
+.bt-sights-data div,
+.bt-transport-data div {
+  flex: 1;
+}
+
+.bt-airline-data div p,
+.bt-sights-data div p,
+.bt-guides-data div p,
+.bt-hotels-data div p,
+.bt-transport-data div p {
+  color: #666;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 14px;
+}
+
+.bt-airline-data div p:nth-child(2),
+.bt-sights-data div p:nth-child(2),
+.bt-guides-data div p:nth-child(2),
+.bt-hotels-data div p:nth-child(2),
+.bt-transport-data div p:nth-child(2) {
+  color: #000;
+  margin: 0.5rem 0 0 1rem;
+}
+
+.bt-flight-route img {
+  height: 5rem;
+}
+
+.bt-flight-route {
+  text-align: center;
+  font-family: Merriweather, Arial, Helvetica, sans-serif;
+  color: #666;
+}
+
+.bt-costs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bt-price-title {
+  color: #fff;
+  font-family: Monstserrat, Arial, Helvetica, sans-serif;
+  font-size: 1.3rem;
+  margin: 0.5rem 0;
+}
+
+.bt-flight-price,
+.bt-sight-total div {
+  background: #fff;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  border-radius: 8px;
+}
+
+.bt-flight-price-container,
+.bt-sight-total {
+  background-color: #888;
+  padding: 1rem;
+}
+
+.bt-flight-price p:nth-child(1) {
+  font-family: Monstserrat, Arial, Helvetica, sans-serif;
+}
+.bt-flight-price-data,
+.bt-sight-total div {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 0.5rem 1rem;
+}
+.bt-flight-price-data p,
+.bt-sight-total div p {
+  font-family: Merriweather, Arial, Helvetica, sans-serif;
+  color: #666;
+}
+
+.bt-flight-price-data p:nth-child(2),
+.bt-sight-total div p:nth-child(2) {
+  flex: 1;
+  border-bottom: 2px dotted var(--primary-color);
+}
+
+.bt-flight-total {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.bt-flight-total div,
+.bt-guides-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.bt-flight-total p,
+.bt-guides-total {
+  font-family: Merriweather, Arial, Helvetica, sans-serif;
+}
+
+.bt-flight-total div p:nth-child(2),
+.bt-guides-total p:nth-child(2) {
+  border-bottom: 2px dotted #fff;
+  flex: 1;
+}
+.bt-guides-total {
+  color: #fff;
+}
+
+.bt-administrative-cost {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  gap: 1rem;
+  align-items: center;
+}
+
+.bt-administrative-cost p:nth-child(2) {
+  border-bottom: 3px dotted #888;
+  flex: 1;
+}
+
+.bt-administrative-cost p {
+  color: #666;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+/* guides */
+
+.bt-guide-price-container {
+  background-color: #888;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.bt-guide-price {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.bt-guide-data-container {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px solid var(--primary-color);
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.bt-guide-data-container div p:nth-child(1) {
+  color: #666;
+}
+
+.bt-guide-total {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  font-family: Merriweather, Arial, Helvetica, sans-serif;
+}
+
+.bt-guide-total p:nth-child(2) {
+  flex: 1;
+  border-bottom: 2px dotted var(--primary-color);
+}
+
+.bt-continue-reservation,
+.bt-submit-info-final,
+.bt-success-modal button {
+  width: fit-content;
+  color: #fff;
+  background-color: var(--primary-color);
+  border: none;
+  padding: 1rem 3rem;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  margin: 1rem auto;
+  transition: background-color 0.3s;
+}
+
+.bt-continue-reservation:hover,
+.bt-success-modal button:hover {
+  background-color: #980a00;
+}
+.bt-password-form {
+  padding: 1rem;
+  background-color: #e4e4e4;
+}
+
+.bt-password-form p {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+.bt-password-form p span {
+  font-size: 1.3rem;
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.bt-password-section {
+  display: flex;
+  gap: 2rem;
+}
+
+.bt-password-section div {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 1rem;
+}
+
+.bt-password-section div label {
+  color: #666;
+  font-family: Merriweather, Arial, Helvetica, sans-serif;
+}
+
+.bt-password-section div input {
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+.bt-password-checklist span {
+  font-size: 1rem !important;
+}
+
+.bt-success-modal {
+  margin: 40vh auto;
+  background-color: #fff;
+  padding: 6rem;
+  /* padding-bottom: 10rem; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  box-sizing: border-box;
+}
+
+.bt-discount-text {
+  background-color: #0f0;
+  padding: 0.3rem;
+  width: fit-content;
+  border-radius: 5px;
+  font-family: Montserrat;
+  position: relative;
+  z-index: 10;
+  align-self: flex-end;
+  color: #000 !important;
+}
+
+.bt-discount-text::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  background: #0f0;
+  z-index: -1;
+  transform: rotate(45deg);
+}
+
+.bt-sight-amount {
+  display: flex !important;
+  background-color: transparent !important;
+  justify-content: flex-end !important;
+}
+
+.bt-align-center {
+  justify-self: center;
+}
+
+.bt-total-price {
+  color: #000 !important;
+  font-size: 1.6rem !important;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .bt-sections-container {
+    grid-template-columns: 1fr;
+  }
+  .bt-user-data-container {
+    grid-template-columns: 1fr;
+  }
+}

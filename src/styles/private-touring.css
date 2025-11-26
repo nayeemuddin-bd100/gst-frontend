@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Imperial+Script&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+.pt-container {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  gap: 1rem;
+  background: #fff;
+  align-items: center;
+}
+
+.pt-container p {
+  line-height: 1.8;
+  padding: 1rem;
+}
+
+.pt-container img {
+  aspect-ratio: 1;
+  object-fit: cover;
+  width: 100%;
+}
+
+.pt-second-container {
+  grid-template-columns: 30% 70%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.pt-second-container .hs-text-container h2 {
+  border: none;
+  font-size: 1.8rem;
+  color: #111;
+}
+
+.hs-text-container h4 {
+  font-size: 1rem;
+  font-family: Merriweather, Arial, Helvetica, sans-serif;
+}
+
+.pt-list-ul {
+  font-size: 1rem;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  margin: 1rem 1rem 1rem 3rem;
+}
+
+.pt-list-ul li {
+  margin: 1.5rem 0;
+  color: var(--primary-color);
+  list-style: circle;
+}
+@media screen and (max-width: 768px) {
+  .pt-container,
+  .pt-second-container {
+    grid-template-columns: 1fr; /* En dispositivos móviles, poner los contenedores en una sola columna */
+  }
+}
